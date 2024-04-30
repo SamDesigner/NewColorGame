@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #232323;
+        }
+        header{
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(19, 139, 191);
+        }
+        h1{
+            color: white;
+        }
+        #container{
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .square{
+            float: left;
+            width: 30%;
+            background-color: purple;
+            height: 25vh;
+            margin: 10px;
+        }
+        .message{
+            color: black;
+            font-weight: bold;
+        }
+        .progress_message{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            max-height: fit-content;
+        }
+        .progress_message .inner{
+            width: 70%; 
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Colt Steele's <span id="colorDisplay">RGB</span> Color Game</h1>
+    </header>
+    
+    <div class="progress_message">
+        <div class="inner">
+           <button class="change">New Color</button>
+            <span class="message"></span>
+            
+        </div>
+
+    </div>
+
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
